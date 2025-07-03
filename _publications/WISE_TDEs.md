@@ -5,6 +5,6 @@ permalink: /publication/WISE_TDEs
 excerpt: ''
 date: 2024-01-01
 venue: 'ApJ'
-paperurl: 'https://ui.adsabs.harvard.edu/abs/2024arXiv240101403M/abstract'
+paperurl: 'https://ui.adsabs.harvard.edu/abs/2024ApJ...961..211M/abstract'
 citation: 'Masterson, M., De, K., Panagiotou, C., Kara, E., et al. 2024, ApJ, 961, 2, 211.'
 ---
