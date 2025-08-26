@@ -9,7 +9,166 @@
   <link rel="stylesheet" href="/assets/css/custom.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript>
-  <style>/* academicons size */ .icons .ai{font-size:1.2em;vertical-align:middle;margin-right:0.25rem}</style>
+  <style>
+/* academicons size */ 
+.icons .ai{font-size:1.2em;vertical-align:middle;margin-right:0.25rem}
+
+/* Background image */
+:root{
+  --site-bg: url('/images/wdbh.jpg');
+  --bg-scrim: rgba(0,0,0,.35);
+}
+
+html, body { 
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+}
+
+body{ 
+  position: relative; 
+  background: transparent; 
+  overflow-x: hidden;
+}
+
+body::before{
+  content: "";
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: linear-gradient(var(--bg-scrim), var(--bg-scrim)), var(--site-bg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Make containers transparent */
+#wrapper, #main, #footer, #header, #nav, .posts, #bio { 
+  background: transparent; 
+  background-color: transparent;
+}
+
+/* Semi-transparent main content */
+#main {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation styling */
+#nav{
+  background: rgba(0,0,0,.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  margin: 0 1rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+#nav .links a, #nav .icons a { 
+  color: #fff; 
+  text-decoration: none;
+}
+#nav .links a:hover, #nav .icons a:hover {
+  color: #ccc;
+}
+
+/* Masthead - force everything to center */
+#masthead {
+  text-align: center; 
+  padding: 3rem 1rem 2rem;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Headshot */
+#masthead img.photo{
+  width: 200px; 
+  height: 200px;
+  max-width: none;
+  border-radius: 50%;
+  object-fit: cover; 
+  object-position: 50% 50%;
+  display: block; 
+  margin: 0 auto 1.5rem;
+  border: 4px solid rgba(255,255,255,.9);
+  box-shadow: 0 12px 30px rgba(0,0,0,.35);
+}
+
+@media (min-width:980px){ 
+  #masthead img.photo{ 
+    width: 250px; 
+    height: 250px; 
+  } 
+}
+
+/* Title and text - force center */
+#masthead h1{ 
+  color: #fff; 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  margin: 0 auto 0.5rem auto;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+#masthead p{ 
+  color: rgba(255,255,255,.95); 
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  margin: 0 auto 1.5rem auto;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+/* Actions container - force center */
+#masthead .actions {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#masthead .actions li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+}
+
+/* Button styling */
+#masthead .actions .button {
+  background: rgba(255,255,255,0.9);
+  color: #333;
+  border: none;
+  text-shadow: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+#masthead .actions .button:hover {
+  background: rgba(255,255,255,1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+</style>
 
 </head>
 <body class="is-preload">

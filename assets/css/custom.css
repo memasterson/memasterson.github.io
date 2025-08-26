@@ -60,13 +60,55 @@ body::before{
   border-radius: 12px;
   margin: 0 1rem 1rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center !important;
 }
+
+#nav .links {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#nav .links li {
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+#nav .icons {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#nav .icons li {
+  text-align: center !important;
+  margin: 0 !important;
+}
+
 #nav .links a, #nav .icons a { 
   color: #fff !important; 
   text-decoration: none !important;
 }
 #nav .links a:hover, #nav .icons a:hover {
   color: #ccc !important;
+}
+
+/* Hide the header logo initially (shows after scroll) */
+#header {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+}
+
+/* Show header when scrolled */
+body.is-article-visible #header,
+body.is-loading #header {
+  opacity: 1 !important;
 }
 
 /* Masthead styling - positioned over background */
