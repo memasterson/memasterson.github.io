@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Massively theme CSS: make sure /assets from HTML5 UP is present -->
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript>
   <style>
@@ -20,28 +21,21 @@
 
     <!-- Intro -->
     <div id="masthead">
-      <img class="photo" src="/images/me.jpg" alt="Headshot of Megan Masterson" style="width:160px;height:160px;border-radius:50%;border:4px solid #fff;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-      <h1>Megan Masterson</h1>
-      <p>Astrophysics PhD Candidate @ MIT</p>
-      <ul class="actions">
-        <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-      </ul>
+      <img class="photo" src="images/me.jpg" alt="Headshot of Megan Masterson">
+       <!-- style="width:400px;height:400px;border-radius:50%;border:8px solid #fff;object-fit:cover;box-shadow:0 5px 10px rgba(0,0,0,0.08);"> -->
+      <h1 style="color:#fff; text-align:center">Megan Masterson</h1>
+      <p style="color:#fff; text-align:center; font-size:2.0em; margin-top:-1.2em; margin-bottom:2em;">Astrophysics PhD Candidate @ MIT</p>
     </div>
-
-    <!-- Header -->
-    <header id="header">
-      <a href="/index.html" class="logo">Megan Masterson</a>
-    </header>
 
     <!-- Nav -->
     <nav id="nav">
       <ul class="links">
-        <li class="active"><a href="/index.html">Home</a></li>
-<li class=""><a href="/research.html">Research</a></li>
-<li class=""><a href="/teaching.html">Teaching</a></li>
-<li class=""><a href="/outreach.html">Outreach</a></li>
-<li class=""><a href="/inthenews.html">In The News</a></li>
-<li class=""><a href="/cv.html">CV</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+<li class=""><a href="research.html">Research</a></li>
+<li class=""><a href="teaching.html">Teaching</a></li>
+<li class=""><a href="outreach.html">Outreach</a></li>
+<li class=""><a href="inthenews.html">In The News</a></li>
+<li class=""><a href="cv.html">CV</a></li>
       </ul>
       <ul class="icons">
         <li><a href="https://github.com/memasterson" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
@@ -57,13 +51,10 @@
 
 <!-- About Me Section -->
 <section id="bio">
-  <div style="display: flex; align-items: center; gap: 2rem;">
-    <img src="/images/me.jpg" alt="Headshot of Megan Masterson" style="width:100px;height:100px;border-radius:50%;border:3px solid #fff;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-    <div>
-      <header class="major">
-        <h1>About me</h1>
-      </header>
-    </div>
+  <div>
+    <header class="major">
+      <h2 style="font-size:3em;">About me</h2>
+    </header>
   </div>
   <p>
     I'm a PhD candidate at the MIT Kavli Institute for Astrophysics and Space Research, where I work with <a href="https://www.erinkara.space/">Prof. Erin Kara</a> to study how supermassive black holes grow and affect their surroundings. 
@@ -77,11 +68,15 @@
     I also have broad interests in high-energy astrophysics and have also worked on high resolution X-ray spectroscopy of nearby AGN and the evolution of AGN feedback in galaxy clusters across cosmic time.
   </p>
   <p>
-    Outside of research, I'm passionate about science communication and academic advocacy. Throughout my PhD, I was a writer for <a href="https://astrobites.org/">Astrobites</a>, helped run <a href="https://astronomyontap.org/locations/boston-ma/">Boston's Astronomy on Tap chapter</a>, participated in and led <a href="https://astrogazers.mit.edu/">the MIT Astrogazers</a>, and led the <a href="https://sites.mit.edu/physgaap/">MIT Physics Graduate Application Assistance Program (PhysGAAP)</a>. 
-    In my free time, you'll find me escaping into nature for hiking and camping adventures, reading, or watching a women's soccer game.
+    Outside of research, I'm passionate about science communication and making astronomy and physics more accessible. Throughout my PhD, I was a writer for <a href="https://astrobites.org/">Astrobites</a>, helped run <a href="https://astronomyontap.org/locations/boston-ma/">Boston's Astronomy on Tap chapter</a>, participated in and led <a href="https://astrogazers.mit.edu/">the MIT Astrogazers</a>, and led the <a href="https://sites.mit.edu/physgaap/">MIT Physics Graduate Application Assistance Program (PhysGAAP)</a>. 
+    In my free time, you'll find me escaping into nature to hike and camp, reading, or watching a women's soccer game.
   </p>
   <p>
-    Want to get in touch? Email me at <a href="mailto:mmasters@mit.edu">mmasters@mit.edu</a>!
+    <div style="background:#99affe; border-radius:10px; padding:1.5em; text-align:center; margin:2em 0;">
+      <span style="font-size:1.5em; font-weight:bold;">
+        Want to get in touch? Email me at <a href="mailto:mmasters@mit.edu">mmasters@mit.edu</a>!
+      </span>
+    </div>
   </p>
 </section>
 
@@ -102,11 +97,11 @@
   </div>
 
   <!-- Scripts (Massively requires these; provided by /assets from the theme) -->
-  <script src="/assets/js/jquery.min.js"></script>
-  <script src="/assets/js/jquery.scrollex.min.js"></script>
-  <script src="/assets/js/browser.min.js"></script>
-  <script src="/assets/js/breakpoints.min.js"></script>
-  <script src="/assets/js/util.js"></script>
-  <script src="/assets/js/main.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
