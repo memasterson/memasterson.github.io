@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Node (if you experiment with npm tooling later)
+node_modules/
+npm-debug.log*
+
+# Python (if you ever use scripts locally)
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Misc
+*.swp
+*.zip
+
