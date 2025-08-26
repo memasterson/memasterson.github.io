@@ -17,90 +17,33 @@ body::before {
   background-attachment: fixed;
 }
 
-/* Make everything transparent to show background */
+/* Make background show through */
 #wrapper, #main, #footer, #header, #nav { 
   background: transparent !important; 
 }
 
-/* Content readability */
+/* Make main content readable */
 #main {
   background: rgba(255, 255, 255, 0.95) !important;
-  border-radius: 8px;
-  margin: 1rem;
-  padding: 2rem;
 }
 
-/* Hide header initially */
-#header {
-  display: none;
-}
-
-/* Navigation */
-#nav {
-  background: rgba(0,0,0,.8) !important;
-  border-radius: 8px;
-  margin: 1rem;
-  text-align: center;
-}
-
-#nav .links a, #nav .icons a {
-  color: #fff !important;
-}
-
-#nav .links a:hover, #nav .icons a:hover {
-  color: #ccc !important;
-}
-
-/* Fix the active link to be visible */
-#nav .links li.active a {
-  color: #fff !important;
-  background: rgba(255,255,255,0.1) !important;
-}
-
-/* Masthead styling */
-#masthead {
-  text-align: center !important;
-  padding: 3rem 1rem 2rem !important;
-}
-
+/* Simple headshot styling */
 #masthead img.photo {
   width: 200px !important;
   height: 200px !important;
   border-radius: 50% !important;
   object-fit: cover !important;
   display: block !important;
-  margin: 0 auto 1.5rem !important;
-  border: 4px solid rgba(255,255,255,.9) !important;
-  box-shadow: 0 12px 30px rgba(0,0,0,.4) !important;
+  margin: 0 auto 1rem !important;
 }
 
+/* Make text readable on background */
 #masthead h1 {
   color: #fff !important;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
-  text-align: center !important;
-  margin-bottom: 0.5rem !important;
 }
 
 #masthead p {
   color: rgba(255,255,255,.95) !important;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
-  text-align: center !important;
-  margin-bottom: 1.5rem !important;
-}
-
-#masthead .actions {
-  text-align: center !important;
-}
-
-#masthead .actions .button {
-  background: rgba(255,255,255,0.9) !important;
-  color: #333 !important;
-  border-radius: 25px !important;
-}
-
-@media (min-width:980px) {
-  #masthead img.photo {
-    width: 250px !important;
-    height: 250px !important;
-  }
 }
