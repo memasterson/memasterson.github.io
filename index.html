@@ -7,6 +7,38 @@
   <!-- Massively theme CSS: make sure /assets from HTML5 UP is present -->
   <link rel="stylesheet" href="/assets/css/main.css">
   <noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript>
+  <!-- add a background and a headshot -->
+  <style>
+  /* Hero background with a dark overlay for text contrast */
+  #banner.hero { position: relative; }
+  #banner.hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Uses the CSS variable set on the section tag */
+    background-image:
+      linear-gradient(to bottom, rgba(0,0,0,.45), rgba(0,0,0,.45)),
+      var(--hero-img);
+    z-index: 0;
+  }
+  #banner.hero .inner { position: relative; z-index: 1; }
+
+  /* Circular headshot */
+  #banner.hero .headshot {
+    display: block;
+    width: 140px; height: 140px;
+    object-fit: cover;
+    border-radius: 9999px;
+    border: 4px solid rgba(255,255,255,.9);
+    box-shadow: 0 12px 30px rgba(0,0,0,.35);
+    margin: 0 auto 1rem; /* center + space below */
+  }
+  @media (min-width: 980px) {
+    #banner.hero .headshot { width: 180px; height: 180px; }
+  }
+  </style>
 </head>
 <body class="is-preload">
   <!-- Wrapper -->
@@ -49,13 +81,21 @@
     <div id="main">
       
 <!-- Banner -->
-<section id="banner" class="major">
+<section id="banner" class="major hero"
+         style="--hero-img: url('/images/nebula-bg.jpg')"><!-- ← your background file -->
   <div class="inner">
+
+    <!-- Headshot above the name -->
+    <img class="headshot"
+         src="/images/me.jpg"               <!-- ← your headshot file -->
+         alt="Headshot of Megan Masterson">
+
     <header class="major">
       <h1>Megan Masterson</h1>
     </header>
+
     <div class="content">
-      <p>Astrophysics • Supermassive Black Holes • Transients </p>
+      <p>Astrophysics • AGN • JWST/MIRI • Spectral-timing</p>
       <ul class="actions">
         <li><a href="#bio" class="button next scrolly">Explore</a></li>
         <li><a href="/cv.html" class="button">CV</a></li>
