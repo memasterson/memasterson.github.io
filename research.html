@@ -56,17 +56,192 @@
       <h2 style="font-size:3em;">Research</h2>
     </header>
   </div>
-  <p>Work in progress ...</p>
+  <p>I'm broadly interested in understanding the physics, formation, and growth of supermassive black holes. My PhD work has focused on discovering and characterizing interesting transients from supermassive black holes, including tidal disruption events (TDEs) and changing-look active galactic nuclei (AGN). I have used novel spectroscopy techniques to disentangle the geometry of gas flows around ordinary AGN and studied the evolution of AGN feedback in galaxy clusters through a multi-wavelength lens. Read more about my research interests below!</p>
 
-  <!-- <section class="posts">
-    <article>
-      <a href="#" class="image"><img src="/images/research.svg" alt=""></a>
-      <h3>Dust Echoes from TDEs</h3>
-      <p>JWST/MIRI spectral‑timing analysis pipeline for transient AGN events; modeling and inference.</p>
-      <ul class="actions"><li><a href="#" class="button">Project page</a></li></ul>
+  <section class="posts" style="display: flex; flex-wrap: wrap; gap: 2em;">
+    <!-- Panel 1 -->
+    <article style="flex: 1 1 45%; box-sizing: border-box; min-width: 300px; background: rgba(0, 0, 0, 0); border-radius: 1em; box-shadow: 0 2px 8px rgba(0,0,0,0.2); padding: 2em;">
+      <div style="text-align: center;">
+        <img src="images/dustecho.jpg" alt="" style="width:200px; height:200px; border-radius:50%; object-fit:cover; box-shadow:0 2px 8px rgba(0,0,0,0.12); border: 4px solid #000; display:block; margin:auto;">
+        <h3 style="text-align: center; margin-top: 1.5em;">Tidal Disruption Event Dust Echoes</h3>
+      </div>
+      <div class="actions" style="display:flex; justify-content:center;">
+        <button class="open-modal" data-modal="modal-dustecho" style="width:60%;">Read more</button>
+      </div>
     </article>
+    <!-- Panel 2 -->
+    <article style="flex: 1 1 45%; box-sizing: border-box; min-width: 300px; background: rgba(0, 0, 0, 0); border-radius: 1em; box-shadow: 0 2px 8px rgba(0,0,0,0.2); padding: 2em;">
+      <div style="text-align: center;">
+        <img src="images/wdbh.jpg" alt="" style="width:200px; height:200px; border-radius:50%; object-fit:cover; box-shadow:0 2px 8px rgba(0,0,0,0.12); border: 4px solid #000; display:block; margin:auto;">
+        <h3 style="text-align: center; margin-top: 1.5em;">The Dynamic X-ray Corona</h3>
+      </div>
+      <p></p>
+      <div class="actions" style="display:flex; justify-content:center;">
+        <button class="open-modal" data-modal="modal-xrayvar" style="width:60%;">Read more</button>
+      </div>
+    </article>
+    <!-- Panel 3 -->
+    <article style="flex: 1 1 45%; box-sizing: border-box; min-width: 300px; background: rgba(0, 0, 0, 0); border-radius: 1em; box-shadow: 0 2px 8px rgba(0,0,0,0.2); padding: 2em;">
+      <div style="text-align: center;">
+        <img src="images/chandra.jpg" alt="" style="width:200px; height:200px; border-radius:50%; object-fit:cover; box-shadow:0 2px 8px rgba(0,0,0,0.12); border: 4px solid #000; display:block; margin:auto;">
+        <h3 style="text-align: center; margin-top: 1.5em;">High Resolution X-ray Spectroscopy</h3>
+      </div>
+      <p></p>
+      <div class="actions" style="display:flex; justify-content:center;">
+        <button class="open-modal" data-modal="modal-highres" style="width:60%;">Read more</button>
+      </div>
+    </article>
+    <!-- Panel 4 -->
+    <article style="flex: 1 1 45%; box-sizing: border-box; min-width: 300px; background: rgba(0, 0, 0, 0); border-radius: 1em; box-shadow: 0 2px 8px rgba(0,0,0,0.2); padding: 2em;">
+      <div style="text-align: center;">
+        <img src="images/agnfeedback.png" alt="" style="width:200px; height:200px; border-radius:50%; object-fit:cover; box-shadow:0 2px 8px rgba(0,0,0,0.12); border: 4px solid #000; display:block; margin:auto;">
+        <h3 style="text-align: center; margin-top: 1.5em;">Cosmic Evolution of AGN Feedback</h3>
+      </div>
+      <p></p>
+      <div class="actions" style="display:flex; justify-content:center;">
+        <button class="open-modal" data-modal="modal-agn-feedback" style="width:60%;">Read more</button>
+      </div>
+    </article>
+  </section>
 
-    <article>
+  <!-- Modal for Dust Echo -->
+  <div id="modal-dustecho" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); z-index:1000; align-items:center; justify-content:center;">
+    <div style="background:#fff; border-radius:1em; max-width:1200px; width:90%; min-height:600px; max-height:80vh; padding:4em 3em 3em 3em; position:relative; box-shadow:0 4px 24px rgba(0,0,0,0.3); display:flex; flex-direction:column; align-items:flex-start; overflow-y:auto;">
+      <span class="close-modal" style="position:absolute; top:0.8em; right:0.8em; background:none; border:none; font-size:2.5em; cursor:pointer; color:#999; padding:0; line-height:1; font-weight:300; user-select:none;">×</span>
+      <div style="width:100%; display:flex; flex-direction:column; align-items:center;">
+        <h2>Tidal Disruption Event Dust Echoes</h2>
+        <p>
+          When an unfortunate star wanders just a little too close to a supermassive black hole, the tidal forces of the black hole can exceed the star's self-gravity, ripping the star apart and temporarily awakening a previously dormant black hole. 
+          As some of the stellar debris accretes onto the black hole, a temporary flare of emission is released across a variety of wavelengths, allowing us to study these previously invisible supermassive black holes. 
+          The recent advances in optical time-domain surveys have propelled the field of TDEs into the population regime, but there is growing evidence that these surveys may be biased against finding TDEs in dusty, gas-rich environments, which are expected to be common in the nuclei of star-forming galaxies.
+          Obtaining a full census of TDEs and understanding observational biases is crucial for using TDEs as probes of supermassive black hole demographics.
+        </p>
+        <p>
+          To this end, I led the first systematic search for TDEs in the mid-infrared (MIR) band using data from <a href="https://science.nasa.gov/mission/neowise/">Wide-field Infrared Survey Explorer (WISE)</a>, which scanned the sky in two filters every 6 months from 2013-2024.
+          The MIR is the ideal wavelength regime to search for TDEs in dusty nuclei, as the UV/optical emission from the TDE is absorbed by surrounding dust and re-radiated at longer wavelengths, producing a "dust echo" that peaks in the MIR.
+          In <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...910..123M/abstract">Masterson et al. (2024)</a>, we identified 12 TDEs within 200 Mpc, the majority of which were missed by optical surveys. 
+          This sample includes the closest TDE discovered to date, first published in <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...944L..12P/abstract">Panagiotou et al. (2023)</a>. 
+          These MIR-selected TDEs occurs at a comparable rate to optically selected TDEs, no strong preference towards post-starburst galaxies (as is commonly seen in optical samples), and help solve the TDE Missing Energy Problem by revealing the extreme UV light that is impossible for us to measure directly.
+          This work demonstrates that MIR time-domain surveys are a powerful tool for obtaining a complete census of TDEs and probing the dusty, circumnuclear environments of supermassive black holes.
+        </p>
+        <!--- insert image --->
+        <figure style="width:100%; text-align:center;">
+          <img src="images/Masterson24.jpg" alt="WISE TDEs" style="max-width:100%; height:auto; border-radius:0.5em;">
+        </figure>
+        <figcaption style="margin-top:0.5em; margin-bottom:1.5em; font-size:0.8em; color:#555; font-style:italic; text-align:center;">
+          Left: Total energy released by the WISE TDEs (purple) compared to optically selected TDEs (pink), showing that the WISE TDEs get much closer to the theoretical expectation for energy released during a TDE.
+          Right: Host galaxy properties of these TDEs, showing that they occur in a variety of galaxy types, unlike optically selected TDEs which prefer post-starburst galaxies.
+          Adapted from <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...910..123M/abstract">Masterson et al. (2024)</a>.
+        </figcaption>
+        <p>
+          Building on this foundation, in <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...988L..48M/abstract">Masterson et al. (2025b)</a> we obtained the first JWST/MIRI spectra of TDEs, providing an unprecedented view of their circumnuclear environments.
+          All four TDEs in our sample display compact, accretion-driven emission lines from highly ionized gas, alongside strong silicate dust emission features at 10 and 18 µm.
+          These spectra demonstrate that dust heated by TDEs is largely optically thin and that these features are much stronger than those seen in normal AGN with dusty tori.
+          We modeled the expected time-dependent MIR spectrum, finding that most sources show a short-wavelength (&lt; 8 µm) excess that may represent a late-time plateau in the flare emission, similar to the UV behavior of unobscured TDEs. 
+          Together, these results establish JWST as a transformative tool for studying black holes in dusty nuclei, and they pave the way for detailed modeling of how stellar disruptions interact with surrounding gas and dust.
+        </p>
+        <!--- insert image --->
+        <figure style="width:100%; text-align:center;">
+          <img src="images/Masterson25b.jpg" alt="JWST/MIRI spectra of TDEs" style="max-width:100%; height:auto; border-radius:0.5em;">
+          <figcaption style="margin-top:0.5em; margin-bottom:1.5em; font-size:0.8em; color:#555; font-style:italic; text-align:center;">
+            JWST/MIRI spectra of four TDEs, showing strong high ionization lines (dark green) and strong silicate emission features at 10 and 18 µm (dark purple).
+            Figure 1 from <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...988L..48M/abstract">Masterson et al. (2025b)</a>.
+          </figcaption>
+        </figure>
+        <p>
+          I am also involved in many follow-up efforts to characterize the multi-wavelength properties of these IR-selected TDEs. 
+          Most recently, my collaborator, Will Golay, led a radio study of WTP14adeqka, finding that it shows a delayed radio outflow, similar to what is seen in optically selected TDEs.
+          In <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250816756G/abstract">Golay et al. (2025)</a>, we show that this is the first <i>resolved</i> radio outflow from a TDE using two VLBI observations with the VLBA. 
+          Stayed tuned for more exciting results from IR-selected TDEs in the near future!
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for the Dynamic X-ray Corona -->
+  <div id="modal-xrayvar" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); z-index:1000; align-items:center; justify-content:center;">
+    <div style="background:#fff; border-radius:1em; max-width:1200px; width:90%; min-height:600px; max-height:80vh; padding:4em 3em 3em 3em; position:relative; box-shadow:0 4px 24px rgba(0,0,0,0.3); display:flex; flex-direction:column; align-items:flex-start; overflow-y:auto;">
+      <span class="close-modal" style="position:absolute; top:0.8em; right:0.8em; background:none; border:none; font-size:2.5em; cursor:pointer; color:#999; padding:0; line-height:1; font-weight:300; user-select:none;">×</span>
+      <div style="width:100%; display:flex; flex-direction:column; align-items:center;">
+        <h2>The Dynamic X-ray Corona</h2>
+        <p>Work in progress... check back soon!</p>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for High Resolution X-ray -->
+  <div id="modal-highres" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); z-index:1000; align-items:center; justify-content:center;">
+    <div style="background:#fff; border-radius:1em; max-width:1200px; width:90%; min-height:600px; max-height:80vh; padding:4em 3em 3em 3em; position:relative; box-shadow:0 4px 24px rgba(0,0,0,0.3); display:flex; flex-direction:column; align-items:flex-start; overflow-y:auto;">
+      <span class="close-modal" style="position:absolute; top:0.8em; right:0.8em; background:none; border:none; font-size:2.5em; cursor:pointer; color:#999; padding:0; line-height:1; font-weight:300; user-select:none;">×</span>
+      <div style="width:100%; display:flex; flex-direction:column; align-items:center;">
+        <h2>High Resolution X-ray Spectroscopy</h2>
+        <p>
+          During my Masters work at the University of Cambridge, I worked with data from the High Energy Transmission Grating on the Chandra X-ray Observatory to probe the narrow Fe K&#945; line around nearby AGN. Despite this line being nearly ubiquitous in AGN X-ray spectra, its origin is still debated.
+          In <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...936...66M/abstract">Masterson et al. (2022b)</a>, we used a novel spectroscopy technique that leveraged the fact that in a dispersive spectrograph, the spatial extent of the emitting gas will impart an additional broadening to the line that is 
+          different across different spectral orders. By combining three different spectral orders, we were able to disentangle the effect of velocity broadening (which is constant across different spectral orders) and spatial extent. 
+          This new technique provides unique constraints on the location of the emitting material, which is nearly impossible to do with standard imaging techniques, even with the best resolution provided by Chandra. 
+          This analysis revealed that the Fe K&#945; line in our sample of nearby AGN is typically produced in the dusty torus, consistent with other recent work, but with a larger radius than is typically inferred from dynamical broadening alone.
+          In the future, I'm interested in applying similar techniques with the recently launched <a href="https://science.nasa.gov/mission/xrism/">XRISM mission</a>.
+        </p>
+        <!--- insert image --->
+        <figure style="width:100%; text-align:center;">
+          <img src="images/Masterson22b.png" alt="High Resolution X-ray Spectroscopy" style="max-width:70%; height:auto; border-radius:0.5em;">
+          <figcaption style="margin-top:0.5em; margin-bottom:1.5em; font-size:0.8em; color:#555; font-style:italic; text-align:center;">
+            Inferred spatial extent from spatial broadening (y-axis) compared to the inferred dynamical radius (x-axis).
+            The larger spatial extents measured using this new technique imply that neglecting the effects of spatial broadening lead to underestimated radii.
+            Figure 4 from <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...936...66M/abstract">Masterson et al. (2022b)</a>.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for AGN Feedback -->
+  <div id="modal-agn-feedback" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); z-index:1000; align-items:center; justify-content:center;">
+    <div style="background:#fff; border-radius:1em; max-width:1200px; width:90%; min-height:600px; max-height:80vh; padding:4em 3em 3em 3em; position:relative; box-shadow:0 4px 24px rgba(0,0,0,0.3); display:flex; flex-direction:column; align-items:flex-start; overflow-y:auto;">
+      <span class="close-modal" style="position:absolute; top:0.8em; right:0.8em; background:none; border:none; font-size:2.5em; cursor:pointer; color:#999; padding:0; line-height:1; font-weight:300; user-select:none;">×</span>
+      <div style="width:100%; display:flex; flex-direction:column; align-items:center;">
+        <h2>Cosmic Evolution of AGN Feedback</h2>
+        <p>
+          I am also broadly interested in how accretion can impact a black hole's surroundings, 
+          and have worked on this avenue by exploring AGN feedback in galaxy clusters as a senior 
+          undergrad and during the first year of my PhD. In <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...944..164M/abstract">Masterson et al. (2023a)</a>, 
+          I worked with Prof. Mike McDonald on a relaxed galaxy cluster at z ~ 1.4 (high redshift for galaxy clusters!). 
+          This system looked surprisingly like many of the low-redshift galaxy clusters that have been studied for the last few decades -- 
+          namely, it showed a cool core in the X-rays with a strong radio source associated with the brightest cluster galaxy (BCG) that had enough power to 
+          prevent the gas from cooling. Essentially, this high-redshift cluster showed well-regulated AGN feedback, where the central supermassive black hole
+          in the BCG is able to prevent gas in the galaxy cluster from cooling! This is the most distant cluster we know of that has these properties, 
+          and thus, it helps set limits on when AGN feedback became a well-regulated and normal process in the universe!
+        </p>
+        <!--- insert image --->
+        <img src="images/Masterson23a.jpg" alt="AGN Feedback in Galaxy Clusters" style="max-width:100%; height:auto; border-radius:0.5em;">
+        <figcaption style="margin-top:0.5em; margin-bottom:1.5em; font-size:0.8em; color:#555; font-style:italic; text-align:center;">
+          Left: Chandra X-ray image of the galaxy cluster SPT-CLJ0607-4448 at z = 1.4, showing a bright X-ray center, indicative of a dense, cool core. 
+          Center: Hubble optical image of the BCG in SPT-CLJ0607-4448. 
+          Right: ATCA radio image, showing a radio point source associated with the BCG. 
+          The relaxed X-ray morphology, passive elliptical BCG, and radio point source together indicate well-regulated AGN feedback at high redshift. 
+          Figure 1 from <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...944..164M/abstract">Masterson et al. (2023a)</a>.
+        </figcaption>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  document.querySelectorAll('.open-modal').forEach(btn => {
+    btn.onclick = function() {
+      document.getElementById(this.dataset.modal).style.display = 'flex';
+    };
+  });
+  document.querySelectorAll('.close-modal').forEach(btn => {
+    btn.onclick = function() {
+      this.closest('.modal').style.display = 'none';
+    };
+  });
+  window.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
+    }
+  });
+  </script>
+
+    <!-- <article>
       <a href="#" class="image"><img src="/images/research.svg" alt=""></a>
       <h3>AGN Variability & Multi‑band Lags</h3>
       <p>Cross‑correlation analyses linking X‑ray and IR variability to probe reprocessing and geometry.</p>
