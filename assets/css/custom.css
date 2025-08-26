@@ -43,6 +43,20 @@ body::before {
   text-align: center;
 }
 
+#nav .links a, #nav .icons a {
+  color: #fff !important;
+}
+
+#nav .links a:hover, #nav .icons a:hover {
+  color: #ccc !important;
+}
+
+/* Fix the active link to be visible */
+#nav .links li.active a {
+  color: #fff !important;
+  background: rgba(255,255,255,0.1) !important;
+}
+
 /* Masthead styling */
 #masthead {
   text-align: center !important;
